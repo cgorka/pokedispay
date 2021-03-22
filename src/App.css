@@ -1,38 +1,75 @@
 .App {
   text-align: center;
 }
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.topBar__nav__item {
+  display: inline-block;
+  margin: 0 10px 5px;
+  font-size: 13px;
+}
+.header {
+  width: 100%;
+  /*height: 50px;*/
+  padding-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+  text-align: center; }
+a {
+  color: #00ADD3;
+  text-decoration: none !important;
+  transition: all 0.3s ease; }
+a:not(.btn):hover {
+  color: #07d2ff; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  display: inline-block;
+  vertical-align: top;
+  /*width: 250px;*/
+  /*height: 250px;*/
+  width: 228px;
+  height: 318.27px;
+  /*padding: 40px 30px;*/
+  margin: 10px 10px;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0 0px 50px 10px rgba(53, 61, 69, 0.05), 0 20px 60px rgba(53, 61, 69, 0.1);
+  cursor: pointer;
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0px 50px 10px rgba(53, 61, 69, 0.05), 0 30px 70px rgba(53, 61, 69, 0.2); }
+.image_poke
+{
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.submitBtn, a.printBtn {
+  display: none;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background: #00ADD3;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 0; }
+.submitBtn:hover, a.printBtn:hover {
+  background: #07d2ff; }
+.format:checked ~ #form__step2 .submitBtn, .format:checked ~ #form__step2 a.printBtn {
+  display: block; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
