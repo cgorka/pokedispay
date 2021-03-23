@@ -6,6 +6,7 @@ import Header from "./Header";
 import Pokemon from "./Pokemon";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Snorlax from "./Pokemons/Snorlax";
+import Series from "./Series/Series";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           <Route path="/Snorlax">
             <Snorlax />
           </Route>
-          <Route path="/users">{/*<Users />*/}</Route>
+          <Route path="/Series">
+            <Series></Series>
+          </Route>
           <Route path="/">
             <Home />
           </Route>

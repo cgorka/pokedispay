@@ -17,7 +17,7 @@ const Header = (props) => {
               <a href="/Snorlax">Snorlax</a>
             </li>
             <li className="topBar__nav__item">
-              <a href="/help">Help</a>
+              <a href="/Series">Series</a>
             </li>
             <li className="topBar__nav__item">
               <a href="https://ko-fi.com/A814HDT" target="_blank">
