@@ -1,4 +1,4 @@
-import React, { PropTypes } from "react";
+import React from "react";
 import mainLogo from "./img/logo.png";
 
 const Header = (props) => {
@@ -18,6 +18,9 @@ const Header = (props) => {
             </li>
             <li className="topBar__nav__item">
               <a href="/Series">Series</a>
+            </li>
+            <li className="topBar__nav__item">
+              <a href="/Child/aaaa">Child/aaaa</a>
             </li>
             <li className="topBar__nav__item">
               <a href="https://ko-fi.com/A814HDT" target="_blank">

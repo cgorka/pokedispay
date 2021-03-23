@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import "react-medium-image-zoom/dist/styles.css";
-import pokemon from "pokemontcgsdk";
 import Header from "./Header";
-import Pokemon from "./Pokemon";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
 import Snorlax from "./Pokemons/Snorlax";
 import Series from "./Series/Series";
+import { Home } from "./Home";
 
 function App() {
   return (
@@ -20,6 +19,7 @@ function App() {
           <Route path="/Series">
             <Series></Series>
           </Route>
+          <Route exact path="/Child/:id" component={Child} />
           <Route path="/">
             <Home />
           </Route>
@@ -29,28 +29,14 @@ function App() {
   );
 }
 
-function Home() {
-  const [pocemons, setPocemon] = useState([]);
-  pokemon.configure({ apiKey: "03da6d84-de02-4d7f-babf-1358bfcbfd8c" });
-  useEffect(() => {
-    pokemon.card
-      .where({ q: "set.id:base1", orderBy: "number" })
-      // .where({ q: "name:snorlax", orderBy: "number" })
-      .then((card) => {
-        console.log(card); // "Charizard"
-        console.log(card.data);
-        setPocemon(card.data);
-      });
-  }, []);
+function Child() {
+  // We can use the `useParams` hook here to access
+  // the dynamic pieces of the URL.
+  let { id } = useParams();
 
   return (
     <div>
-      <p>Seria Base1</p>
-      {pocemons.length > 0 ? (
-        pocemons.map((pokemon) => <Pokemon pokemon={pokemon}></Pokemon>)
-      ) : (
-        <div></div>
-      )}
+      <h3>ID: {id}</h3>
     </div>
   );
 }

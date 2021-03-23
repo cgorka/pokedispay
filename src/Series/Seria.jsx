@@ -29,6 +29,7 @@ const Seria = (props) => {
         ></img>
 
         <p> {props.pokemon.name}</p>
+        <p> {props.pokemon.ptcgoCode}</p>
         <p> {props.pokemon.series}</p>
         <p> {props.pokemon.releaseDate}</p>
         <p> {props.pokemon.printedTotal}</p>
