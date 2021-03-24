@@ -28,9 +28,9 @@ const Pokemon = (props) => {
             className="image_poke"
           ></img>
 
-          <p> {props.pokemon.number}</p>
-          <p> {props.pokemon.set.id}</p>
-          <p> {props.pokemon.set.name}</p>
+          {/*<p> {props.pokemon.number}</p>*/}
+          {/*<p> {props.pokemon.set.id}</p>*/}
+          {/*<p> {props.pokemon.set.name}</p>*/}
         </div>
       </ControlledZoom>
     </div>
