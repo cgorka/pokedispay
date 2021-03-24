@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
 import Snorlax from "./Pokemons/Snorlax";
 import Series from "./Series/Series";
 import { Home } from "./Home";
+import { Serie } from "./Series/Serie";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/Series">
             <Series></Series>
+          </Route>
+          <Route path="/Serie/:name">
+            <Serie></Serie>
           </Route>
           <Route exact path="/Child/:id" component={Child} />
           <Route path="/">

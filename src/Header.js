@@ -14,16 +14,17 @@ const Header = (props) => {
               <a href="/Home">Home</a>
             </li>
             <li className="topBar__nav__item">
-              <a href="/Snorlax">Snorlax</a>
-            </li>
-            <li className="topBar__nav__item">
               <a href="/Series">Series</a>
             </li>
             <li className="topBar__nav__item">
-              <a href="/Child/aaaa">Child/aaaa</a>
+              <a href="/Snorlax">Snorlax</a>
             </li>
+
+            {/*<li className="topBar__nav__item">*/}
+            {/*  <a href="/Serie/base">Serie/base</a>*/}
+            {/*</li>*/}
             <li className="topBar__nav__item">
-              <a href="https://ko-fi.com/A814HDT" target="_blank">
+              <a href="https://ko-fi.com/" target="_blank">
                 Donate
               </a>
             </li>

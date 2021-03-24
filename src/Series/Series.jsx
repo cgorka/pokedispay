@@ -1,7 +1,7 @@
 import React, { PropTypes, useEffect, useState } from "react";
 import pokemon from "pokemontcgsdk";
 import Pokemon from "../Pokemon";
-import Seria from "./Seria";
+import SeriaBox from "./SeriaBox";
 
 const Series = (props) => {
   const [seria, setSeria] = useState([]);
@@ -21,7 +21,7 @@ const Series = (props) => {
   return (
     <div>
       {seria.length > 0 ? (
-        seria.map((pokemon) => <Seria pokemon={pokemon}></Seria>)
+        seria.map((pokemon) => <SeriaBox pokemon={pokemon}></SeriaBox>)
       ) : (
         <div></div>
       )}
