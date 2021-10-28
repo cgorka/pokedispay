@@ -24,7 +24,7 @@ const Header = (props) => {
             {/*  <a href="/Serie/base">Serie/base</a>*/}
             {/*</li>*/}
             <li className="topBar__nav__item">
-              <a href="https://ko-fi.com/" target="_blank">
+              <a href="https://ko-fi.com/cexar" target="_blank">
                 Donate
               </a>
             </li>
