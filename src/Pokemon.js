@@ -19,6 +19,7 @@ const Pokemon = (props) => {
     <div className="box">
       <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
         <div>
+        <p> {props.pokemon.number}</p>
           <img
             id={props.pokemon.id}
             src={
@@ -28,7 +29,7 @@ const Pokemon = (props) => {
             className="image_poke"
           ></img>
 
-          <p> {props.pokemon.number}</p>
+          
           <p> {props.pokemon.set.id}</p>
           <p> {props.pokemon.set.name}</p>
         </div>
