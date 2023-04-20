@@ -15,6 +15,7 @@ const SeriaBox = (props) => {
 
   var text = "";
 
+  // /ww
   return (
     <div className="box">
       <div>
