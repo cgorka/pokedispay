@@ -11,7 +11,7 @@ const Header = (props) => {
         <nav className="topBar__nav">
           <ul className="topBar__nav__list">
             <li className="topBar__nav__item">
-              <a href="/Home">Home</a>
+              <a href="/Home">Cezar Maciek</a>
             </li>
             <li className="topBar__nav__item">
               <a href="/Series">Series</a>
